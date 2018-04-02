@@ -1,0 +1,16 @@
+/**
+ * Visually-hidden class for hiding headers (h1, h2, ..) that are not present in the design but should be in the logic of the document
+ * The contents of the block are invisible on the screen but can be read by screen readers
+ * 2018
+ */
+.visually-hidden:not(:focus):not(:active)
+  position absolute
+  width 1px
+  height 1px
+  margin -1px
+  border 0
+  padding 0
+  white-space nowrap
+  clip-path inset(100%)
+  clip rect(0 0 0 0)
+  overflow hidden
